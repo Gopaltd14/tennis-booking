@@ -1,0 +1,91 @@
+.page {
+  min-height: 100vh;
+  background: #f7f7f7;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #222;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.email {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.logout {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background: #f5f5f5;
+}
+
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 32px;
+  align-items: start;
+}
+
+.wizard {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.sidebar {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 20px;
+  position: sticky;
+  top: 24px;
+}
+
+.sidebarTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: #333;
+}
+
+@media (max-width: 700px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: static;
+  }
+}

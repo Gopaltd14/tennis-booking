@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.back {
+  background: none;
+  border: none;
+  color: #2e7d32;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.courts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
